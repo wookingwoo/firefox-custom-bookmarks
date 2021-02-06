@@ -24,6 +24,6 @@
 
 	* set true
 
-			set toolkit.legacyUserProfileCustomizations.stylesheets=true
+			toolkit.legacyUserProfileCustomizations.stylesheets=true
 
 4. restart firefox
