@@ -14,7 +14,7 @@
 
 2. create a file in profile folder
 
-		[chrome/userChrome.css](https://github.com/wookingwoo/firefox-custom-bookmarks/blob/main/userChrome.css)
+	[chrome/userChrome.css](https://github.com/wookingwoo/firefox-custom-bookmarks/blob/main/userChrome.css)
 
 3. set toolkit
 
