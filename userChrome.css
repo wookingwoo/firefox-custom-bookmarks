@@ -1,4 +1,11 @@
-#bookmarks-view
-{
+/* Sidebar Color & Font Size Formatting */
+.sidebar-placesTree treechildren::-moz-tree-cell-text {
     font-size: 20px !important;
-}
+    color: #000 !important;
+  }
+
+  /* background color on hover or selected */
+  .sidebar-placesTree treechildren::-moz-tree-row(hover),
+  .sidebar-placesTree treechildren::-moz-tree-row(selected) {
+    background-color: #bdf !important;
+  }
