@@ -4,14 +4,17 @@
    ~/.mozilla/firefox/default-[number]/chrome/userChrome.css */
 
 
-/* https://github.com/wookingwoo/firefox-custom-bookmarks */
+/* Read Me
+https://github.com/wookingwoo/firefox-custom-bookmarks */
 
 
 /* change sidebar font style */
 
 #bookmarks-view {
-    font-size: 16pt !important;
-    font-family: DejaVu Sans !important;
+    font-size: 17pt !important;
+    /* font-family: "Microsoft YaHei" !important;
+    font: "Microsoft YaHei" !important; */
+    color: #000000 !important;
     border-width: 0px !important;
     padding: 0px !important;
     margin-top: 0px !important;
@@ -24,6 +27,13 @@
 #bookmarks-view treechildren::-moz-tree-row {
     margin-top: 5px !important;
     margin-bottom: 5px !important;
+}
+
+
+/* background color on selected */
+
+.sidebar-placesTree treechildren::-moz-tree-row(selected) {
+    background-color: rgb(141, 190, 219) !important;
 }
 
 
