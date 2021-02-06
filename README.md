@@ -2,7 +2,7 @@
 
 ### Steps to reproduce:
 
-- open profile folder in firefox 
+1. open profile folder in firefox 
 
 * url
 ```
@@ -14,20 +14,20 @@ about:support
  C:\Users\wookingwoo\AppData\Roaming\Mozilla\Firefox\Profiles\km3tzs5e.default-release 
 ```
 
-- create a file in profile folder
+2. create a file in profile folder
 
-```
 [chrome/userChrome.css](https://github.com/wookingwoo/firefox-custom-bookmarks/blob/main/userChrome.css)
-```
 
-- set toolkit
+3. set toolkit
 
-* url
+*url
 ```
 about:config
 ```
+
+* set true
 ```
 set toolkit.legacyUserProfileCustomizations.stylesheets=true
 ```
 
-- restart firefox
+4. restart firefox
