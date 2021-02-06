@@ -1,11 +1,95 @@
-/* Sidebar Color & Font Size Formatting */
-.sidebar-placesTree treechildren::-moz-tree-cell-text {
-    font-size: 20px !important;
-    color: #000 !important;
-  }
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
-  /* background color on hover or selected */
-  .sidebar-placesTree treechildren::-moz-tree-row(hover),
-  .sidebar-placesTree treechildren::-moz-tree-row(selected) {
-    background-color: #bdf !important;
-  }
+/* location for this file
+   ~/.mozilla/firefox/default-[number]/chrome/userChrome.css */
+
+
+/* https://github.com/wookingwoo/firefox-custom-bookmarks */
+
+
+/* change sidebar font style */
+
+#bookmarks-view {
+    font-size: 16pt !important;
+    font-family: DejaVu Sans !important;
+    border-width: 0px !important;
+    padding: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+
+/* negative amounts, when allowed, can pack lines close */
+
+#bookmarks-view treechildren::-moz-tree-row {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+
+/* Colored folders for bookmark sidebar, toolbar, menu button */
+
+
+/* old code used for years - works in Fx 57 except sidebar column header is still white */
+
+#bookmarks-view-children,
+#historyTree {
+    height: .75 em !important;
+}
+
+#bookmarks-view,
+#historyTree {
+    background-color: rgb(235, 235, 235) !important;
+}
+
+#bookmarksMenuPopup * {
+    background-color: rgb(235, 235, 235) !important;
+    color: #333333 !important;
+}
+
+
+/* Standard folder */
+
+#bookmarks-view treechildren::-moz-tree-image(container),
+#PlacesToolbarItems toolbarbutton[container="true"] .toolbarbutton-icon,
+#PlacesToolbarItems menu[container="true"] .menu-iconic-left,
+#BMB_bookmarksPopup menu[container="true"] .menu-iconic-icon {
+    fill: #e8bb00 !important;
+    /* slightly muted gold */
+}
+
+
+/* Live Bookmark (RSS Feed) */
+
+#bookmarks-view treechildren::-moz-tree-image(container, livemark),
+#PlacesToolbarItems toolbarbutton[container="true"][livemark="true"] .toolbarbutton-icon,
+#PlacesToolbarItems menu[container="true"][livemark="true"] .menu-iconic-left,
+#BMB_bookmarksPopup menu[container="true"][livemark="true"] .menu-iconic-icon {
+    fill: orange !important;
+}
+
+
+/* Smart bookmark folder */
+
+#bookmarks-view treechildren::-moz-tree-image(container, query),
+#PlacesToolbarItems toolbarbutton[container="true"][query="true"] .toolbarbutton-icon,
+#PlacesToolbarItems menu[container="true"][query="true"] .menu-iconic-left,
+#BMB_bookmarksPopup menu[container="true"][query="true"] .menu-iconic-icon {
+    fill: #69c !important;
+    /* similar to blue smart folder color */
+}
+
+
+/* These "containers" are SVG in the sidebar, not yet on the menu */
+
+#bookmarks-view treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksMenu) {
+    fill: olive !important;
+}
+
+#bookmarks-view treechildren::-moz-tree-image(container, OrganizerQuery_BookmarksToolbar) {
+    fill: olive !important;
+}
+
+#bookmarks-view treechildren::-moz-tree-image(container, OrganizerQuery_UnfiledBookmarks) {
+    fill: olive !important;
+}
