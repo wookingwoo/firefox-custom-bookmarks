@@ -15,6 +15,10 @@
 2. create a file in profile folder
 
 	[chrome/userChrome.css](https://github.com/wookingwoo/firefox-custom-bookmarks/blob/main/userChrome.css)
+			
+	* Windows example
+
+			C:\Users\wookingwoo\AppData\Roaming\Mozilla\Firefox\Profiles\km3tzs5e.default-release\chrome\userChrome.css
 
 3. set toolkit
 
